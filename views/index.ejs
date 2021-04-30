@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDN login</title>
+        <style>
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+body {
+    font-family: 'Oswald', sans-serif;
+    margin:0;
+    background-color: #2C2F33;
+    color: rgb(255, 255, 255);
+    font-size: 200%;
+}
+.btn {
+    background-color: #99AAB5;
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 12.7px;
+    padding-right: 25px;
+    padding-left: 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    margin: 4px 8px;
+    cursor: pointer;
+    border-radius: 11px;
+    transition: 0.4s;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #acacac;
+    padding: 13.7px;
+    padding-right: 30px;
+    padding-left: 30px;
+    font-size: 16px;
+}
+.center-div {
+   text-align: center;
+}
+
+
+.password-field {
+    padding: 10px 18px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.info {
+    font-size: 22px;
+    padding: 10px 18px;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #b0c7d6;
+    color:black
+}
+</style>
+
+</head>
+<body>
+    <div class="center-div">
+    <h3>enter password</h3>
+    <form action="/login" method="get" enctype="multipart/form-data">
+        <input class="password-field" type="password" name="pw" placeholder="password..."><br>
+        <input class="btn" type="submit" placeholder="login">
+</form>
+<br>
+<p><%= error %></p>
+<br>
+<div class="info">
+    <p>set up your password using "node set-password.js yourPassword1" replacing yourPassword1 with your password (make it long)</p>
+    <p><a style="color: rgb(71, 71, 255);" href="https://github.com/404invalid-user/imageupload/fork" target="_blank">fork the repo</a></p>
+<br>
+</div>
+</body>
+</html>

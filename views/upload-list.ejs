@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>upload</title>
+    
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+        
+        body {
+    font-family: 'Oswald', sans-serif;
+    margin:0;
+    background-color: #2C2F33;
+    color: rgb(255, 255, 255);
+}
+h2 {
+    font-size: 200%;
+}
+p {
+    font-size: 110%;
+}
+.btn {
+    background-color: #99AAB5;
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 12.7px;
+    padding-right: 25px;
+    padding-left: 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    margin: 4px 8px;
+    cursor: pointer;
+    border-radius: 11px;
+    transition: 0.4s;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #acacac;
+    padding: 13.7px;
+    padding-right: 30px;
+    padding-left: 30px;
+    font-size: 16px;
+}
+.center-div {
+   text-align: center;
+}
+
+
+        .password-field {
+            padding: 10px 18px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .btn {
+            background-color: #99AAB5;
+            border: none;
+            color: rgb(255, 255, 255);
+            padding: 12.7px;
+            padding-right: 25px;
+            padding-left: 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 13px;
+            margin: 4px 8px;
+            cursor: pointer;
+            border-radius: 11px;
+            transition: 0.4s;
+            text-decoration: none;
+        }
+        
+        .btn:hover {
+            background-color: #acacac;
+            padding: 13.7px;
+            padding-right: 30px;
+            padding-left: 30px;
+            font-size: 16px;
+        }
+        .center-div {
+           text-align: center;
+        }
+        .upload {
+            background-color: #7289DA;
+            border: none;
+            color: rgb(255, 255, 255);
+            padding: 12.7px;
+            padding-right: 25px;
+            padding-left: 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 13px;
+            margin: 4px 8px;
+            cursor: pointer;
+            border-radius: 11px;
+            transition: 0.4s;
+            text-decoration: none;
+        }
+        </style>        
+
+</head>
+<body>
+
+    <div class="center-div">
+        <h2>upload list</h2>
+        <p><a class="btn" href="/">Home</a></p>
+        <% images.forEach(img => { %>
+            <p><%= domain %><%= img.replace(' ', '%20') %></p><br>
+            <% }) %>
+    </div>
+</body>
+</html>

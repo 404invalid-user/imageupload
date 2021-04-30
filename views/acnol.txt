@@ -1,0 +1,1 @@
+i use a number of packages to make this work here are the ones i used. express, fs, express-fileupload, body-parser, cors, bcrypt

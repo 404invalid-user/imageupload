@@ -1,0 +1,25 @@
+{
+  "name": "imageupload",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"no test. look at https://github.com/404invalid-user/imageupload if you have any issues\" && exit 1",
+    "start": "node imgup-server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/404invalid-user/imageupload.git"
+},
+  "author": "404invaliduser",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.1",
+    "fs": "^0.0.1-security"
+  }
+}

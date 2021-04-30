@@ -1,0 +1,5 @@
+{
+  "port": 8000,
+  "domain": "http://localhost/",
+  "password": "null"
+}
