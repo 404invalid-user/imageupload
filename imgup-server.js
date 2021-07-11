@@ -59,7 +59,7 @@ app.post('/upload', async(req, res) => {
             }
             if (req.files.img.name.includes('.png') || req.files.img.name.includes('.jpg') || req.files.img.name.includes('jpeg')) {
                 if (fs.existsSync('./images/' + req.files.img.name)) {
-                    res.render('upload.ejs', { passsword: req.query.pw, status: "an image with that name allread exists", imgName: null, imgSize: null })
+                    res.render('upload.ejs', { passsword: req.query.pw, status: "an image with that name allread exists", domain: null, imgName: null, imgSize: null })
                 } else {
                     req.files.img.mv('./images/' + req.files.img.name)
                     res.render('upload.ejs', { passsword: req.query.pw, status: "image has been uploaded", domain: conf.domain, imgName: req.files.img.name.replace(' ', '%20'), imgSize: req.files.img.size })
